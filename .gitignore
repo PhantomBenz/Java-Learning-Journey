@@ -1,0 +1,30 @@
+# Ignore compiled Java class files
+*.class
+
+# Ignore logs
+*.log
+
+# Ignore package files
+*.jar
+*.war
+*.ear
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+out/
+
+# Ignore Eclipse project files
+*.classpath
+*.project
+*.settings/
+
+# VS Code settings
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
