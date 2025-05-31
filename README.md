@@ -8,7 +8,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 
 ## 📑 Table of Contents
 
-* [Day 01 – Java Basics](Day-01/summary.md)
+* [Day 01 – Java Basics: Boilerplate, I/O, Variables & DataTypes](Day-01/summary.md)
 
 ---
 
