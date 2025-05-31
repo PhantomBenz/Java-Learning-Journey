@@ -63,7 +63,7 @@
 | Filename | Description |
 |----------|-------------|
 | [`a_BasicOutput.java`](./a_BasicOutput.java) | Simple output with `System.out.print` |
-| [`b_Pattern.java`](./b_Pattern.java) | Printed basic text/patterns wwithout loop|
+| [`b_Pattern.java`](./b_Pattern.java) | Printed basic text/patterns without loop|
 | [`c_Variable.java`](./c_Variable.java) | Used variables and printed values |
 | [`d_DataType.java`](./d_DataType.java) | Demonstrated primitive data types |
 | [`e_Sum.java`](./e_Sum.java) | Added two numbers |
