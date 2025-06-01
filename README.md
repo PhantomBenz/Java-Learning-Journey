@@ -23,7 +23,7 @@ Java-Learning-Journey/
 │
 ├─ Day-XX/                    ← Folder for Day XX
 │   ├─ *.java                 ← Example: System.out.println and console output basics
-│   └─ summary.md             ← Summary of Day * topics
+│   └─ summary.md             ← Summary of Day XX topics
 │
 └─ …                       
 ```
