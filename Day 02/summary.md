@@ -121,13 +121,13 @@ System.out.println(a--);  // prints 5, then a becomes 4 (post-decrement)
 📁 **Programs Practiced:** 
 
 | Filename | Description |
-|----------|-------------|
-| [`a_TypeConversion.java`](./a_TypeConversion.java) | Implicit Conversion (Automatic) |
-| [`b_TypeCasting.java`](./b_TypeCasting.java) | Explicit Conversion (Manual) |
-| [`c_TypePromotion.java`](./c_TypePromotion.java) | type conversion in an expression |
+|---------------------------------------------------------------|------------------------------------------------------------|
+| [`a_TypeConversion.java`](./a_TypeConversion.java)            | Implicit Conversion (Automatic)                            |
+| [`b_TypeCasting.java`](./b_TypeCasting.java)                  | Explicit Conversion (Manual)                               |
+| [`c_TypePromotion.java`](./c_TypePromotion.java)              | type conversion in an expression                           |
 | [`d_ArithmeticOperation.java`](./d_ArithmeticOperations.java) | Demonstrated different Arithmetic operators and operations |
-| [`e_RelationalOperators.java`](./e_RelationalOperators.java) | Demonstrated different Relational operators and operations |
-| [`f_LogicalOperators.java`](./f_LogicalOperators.java) | Demonstrated different Logical operators |
-| [`g_AssignmentOperators.java`](./g_AssignmentOperators.java) | Demonstrated different Assignment operators and operations |
+| [`e_RelationalOperators.java`](./e_RelationalOperators.java)  | Demonstrated different Relational operators and operations |
+| [`f_LogicalOperators.java`](./f_LogicalOperators.java)        | Demonstrated different Logical operators                   |
+| [`g_AssignmentOperators.java`](./g_AssignmentOperators.java)  | Demonstrated different Assignment operators and operations |
 
 ---
