@@ -47,31 +47,9 @@
 
 ### **⚙️ Java Program Execution Flow**
 
-#### Diagram:
+#### Diagram and Environment Structure:
 
-```text
-Source Code (.java)
-      ↓ (Compilation by compiler)
-  Bytecode (.class)
-      ↓ (Execution)
-Java Virtual Machine (JVM)
-      ↓
-Native Machine Code
-```
-
-#### Environment Structure:
-
-```text
-JDK
-├── JRE
-│   ├── JVM
-│   └── Libraries
-├── Compiler
-└── Dev Tools
-```
-
-* Java is **portable** because bytecode can run on any platform with a JVM.
-* "Write Once, Run Anywhere" – key Java philosophy.
+![Execution Flow](../.image/How%20does%20code%20run%20in%20java.png)
 
 ---
 
