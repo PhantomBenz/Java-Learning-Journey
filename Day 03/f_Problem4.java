@@ -7,7 +7,7 @@ public class f_Problem4 {
 
         if (a >= b && a >= c) {
             System.out.println("Largest number : " + a); 
-        } else if (b >= a && b >= c) {
+        } else if (b >= c) {
             System.out.println("Largest number : " + b); 
         } else {
             System.out.println("Largest number : " + c); 
