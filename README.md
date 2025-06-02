@@ -10,6 +10,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 
 * [Day 01 – Java Basics: Boilerplate, I/O, Variables & DataTypes](./Day%2001/summary.md)
 * [Day 02 – Java: Data Types, Type Conversion, Operators, and Execution Flow](./Day%2002/summary.md)
+* [Day 03 – Java: Conditional Statements](./Day%2003/summary.md)
 
 ---
 
