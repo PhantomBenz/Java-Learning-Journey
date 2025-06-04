@@ -60,11 +60,11 @@ GHIJ
 
 | Filename                  | Description                          |
 |---------------------------|--------------------------------------|
-| `a_Pattern1.java`         | Right-angled triangle using `*`      |
-| `b_Pattern2.java`         | Inverted triangle using `*`          |
-| `c_Pattern3.java`         | Number triangle                      |
-| `d_Pattern4.java`         | Sequential characters in triangle    |
-| `e_HollowRectangle.java`  | Hollow rectangle using `*`           |
+| [`a_NestedLoop.java`](./a_NestedLoop.java)         | Right-angled triangle using `*`      |
+| [`b_InvertedStar.java`](./b_InvertedStar.java)         | Inverted triangle using `*`          |
+| [`c_HalfPyramid.java`](./c_HalfPyramid.java)         | Number triangle                      |
+| [`d_CharPattern.java`](./d_CharPattern.java)         | Sequential characters in triangle    |
+| [`e_HollowRectangle.java`](e_HollowRectangle.java)  | Hollow rectangle using `*`           |
 ---
 
 ### 💡 Key Takeaway:
