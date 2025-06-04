@@ -12,6 +12,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 02 – Java: Data Types, Type Conversion, Operators, and Execution Flow](./Day%2002/summary.md)
 * [Day 03 – Java: Conditional Statements](./Day%2003/summary.md)
 * [Day 04 – Java: Loop & Control Flow](./Day%2004/summary.md)
+* [Day 05 – Java: Pattern Printing with Nested Loops](./Day%2005/summary.md)
 
 ---
 
