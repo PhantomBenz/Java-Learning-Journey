@@ -1,12 +1,12 @@
-# 📅 Day 03 – Conditional Statements in Java
+# Day 03 – Conditional Statements in Java
 
-### 📖 What I Learned:
+### What I Learned:
 
 Today was all about mastering **conditional statements** in Java – tools that help control the flow of logic based on conditions. Here's what I explored:
 
 ---
 
-### ✅ `if-else` Statement
+### `if-else` Statement
 
 * **Purpose:** Execute a block of code if a condition is true, else run alternative code.
 * **Syntax:**
@@ -26,7 +26,7 @@ if (condition) {
 
 ---
 
-### 🔄 `else-if` Ladder
+### `else-if` Ladder
 
 * **Purpose:** Handle multiple conditions sequentially.
 * **Syntax:**
@@ -48,7 +48,7 @@ if (condition1) {
 
 ---
 
-### ❔ Ternary Operator
+### Ternary Operator
 
 * **Purpose:** Write a concise single-line `if-else` expression.
 * **Syntax:**
@@ -63,7 +63,7 @@ result = condition ? valueIfTrue : valueIfFalse;
 
 ---
 
-### 🔁 `switch` Statement
+### `switch` Statement
 
 * **Purpose:** Execute different code blocks based on variable value
 * **Syntax:**
@@ -90,19 +90,19 @@ switch (variable) {
 
 ---
 
-### 🧪 Programs Practiced:
+### Programs Practiced:
 
-| Filename                                               | Description                                  |
-| ------------------------------------------------------ | -------------------------------------------- |
-| [`a_IfElse.java`](./a_IfElse.java)                   | if-else introduction             |
-| [`b_Problem1.java`](./b_Problem1.java)         | Check if number is odd or even using if-else             |
-| [`c_Problem2.java`](./c_Problem2.java)       | Find largest between two numbers using if-else         |
-| [`d_ElseIf.java`](./d_ElseIf.java)     | else if introduction                  |
-| [`e_Problem3.java`](./e_Problem3.java)   | Tax calculation using else-if ladder             |
-| [`f_Problem4.java`](./f_Problem4.java) | Largest among three numbers using else-if ladder |
-| [`g_TernaryOperator.java`](./g_TernaryOperator.java) | Ternary Operator introduction |
-| [`h_Problem5.java`](./h_Problem5.java) | Pass/Fail using ternary operator |
-| [`i_SwitchOperator.java`](./i_SwitchOperator.java) | Introdcution to Switch Operator |
-| [`j_Calculator.java`](./j_Calculator.java) | Simple two variable arithmetic calculator using Switch |
+| Filename                                               | Description                                            |
+| ------------------------------------------------------ | -------------------------------------------------------|
+| [`a_IfElse.java`](./a_IfElse.java)                     | if-else introduction                                   |
+| [`b_Problem1.java`](./b_Problem1.java)                 | Check if number is odd or even using if-else           |
+| [`c_Problem2.java`](./c_Problem2.java)                 | Find largest between two numbers using if-else         |
+| [`d_ElseIf.java`](./d_ElseIf.java)                     | else if introduction                                   |
+| [`e_Problem3.java`](./e_Problem3.java)                 | Tax calculation using else-if ladder                   |
+| [`f_Problem4.java`](./f_Problem4.java)                 | Largest among three numbers using else-if ladder       |
+| [`g_TernaryOperator.java`](./g_TernaryOperator.java)   | Ternary Operator introduction                          |
+| [`h_Problem5.java`](./h_Problem5.java)                 | Pass/Fail using ternary operator                       |
+| [`i_SwitchOperator.java`](./i_SwitchOperator.java)     | Introdcution to Switch Operator                        |
+| [`j_Calculator.java`](./j_Calculator.java)             | Simple two variable arithmetic calculator using Switch |
 
 ---
