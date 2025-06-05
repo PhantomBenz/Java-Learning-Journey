@@ -6,7 +6,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 * [Day 01 – Java Basics: Boilerplate, I/O, Variables & DataTypes](./Day%2001/summary.md)
 * [Day 02 – Java: Data Types, Type Conversion, Operators, and Execution Flow](./Day%2002/summary.md)
@@ -16,7 +16,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 Java-Learning-Journey/
@@ -34,7 +34,7 @@ Java-Learning-Journey/
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 Before you clone and run the examples, ensure you have:
 
@@ -58,7 +58,7 @@ Before you clone and run the examples, ensure you have:
 
 ---
 
-## 🚀 How to Compile & Run
+## How to Compile & Run
 
 You can compile and run each day’s Java examples from the project root. Replace `Day-XX` with the desired folder number.
 
@@ -100,7 +100,7 @@ You can compile and run each day’s Java examples from the project root. Replac
 
 ---
 
-## 📋 Contributing
+## Contributing
 
 Contributions are welcome! If you spot:
 
@@ -120,7 +120,7 @@ Contributions are welcome! If you spot:
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for the full terms and conditions.
 
