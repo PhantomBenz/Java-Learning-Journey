@@ -1,20 +1,20 @@
-### 🗓️ Day 02 – Java: Data Types, Type Conversion, Operators, and Execution Flow
+### Day 02 – Java: Data Types, Type Conversion, Operators, and Execution Flow
 
 ---
 
-#### 📌 Topics Covered:
+#### Topics Covered:
 
 ---
 
-### **📐 Float vs Double**
+### **Float vs Double**
 - Decimal values like `1.40` are treated as `double` by default.
 - To declare a `float`, append `f` like `1.40f`.
 
 ---
 
-### **🔄 Type Conversion in Java**
+### **Type Conversion in Java**
 
-#### 🟢 Widening (Implicit Conversion)
+#### Widening (Implicit Conversion)
 - Automatically done when:
   1. Types are compatible.
   2. Destination type > Source type.
@@ -23,7 +23,7 @@
   byte → short → int → long → float → double
   ```
 
-#### 🔴 Type Casting (Explicit Conversion)
+#### Type Casting (Explicit Conversion)
 
 * Manual conversion using casting operator.
 * Might lead to **loss of precision** (called *lossy* conversion).
@@ -35,7 +35,7 @@
 
 ---
 
-### **📈 Type Promotion in Expressions**
+### **Type Promotion in Expressions**
 
 * `byte`, `short`, and `char` → promoted to `int` in expressions.
 * If one operand is `long`, `float`, or `double`, the whole expression is promoted accordingly.
@@ -45,7 +45,7 @@
 
 ---
 
-### **⚙️ Java Program Execution Flow**
+### **Java Program Execution Flow**
 
 #### Diagram and Environment Structure:
 
@@ -53,7 +53,7 @@
 
 ---
 
-### **➕ Operators in Java**
+### **Operators in Java**
 
 Operators instruct the compiler to perform operations on data.
 
@@ -76,7 +76,7 @@ a = 5;
 System.out.println(a--);  // prints 5, then a becomes 4 (post-decrement)
 ```
 
-> 📌 *Ternary operator will be learned later during conditionals statements.*
+> *Ternary operator will be learned later during conditionals statements.*
 
 ---
 
@@ -118,7 +118,7 @@ System.out.println(a--);  // prints 5, then a becomes 4 (post-decrement)
 
 ---
 
-📁 **Programs Practiced:** 
+**Programs Practiced:** 
 
 | Filename | Description |
 |---------------------------------------------------------------|------------------------------------------------------------|
