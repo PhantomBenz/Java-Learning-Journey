@@ -4,9 +4,9 @@ Today I explored **loops** in Java to execute repetitive tasks efficiently. I al
 
 ---
 
-### 🎓 Topics Covered:
+### Topics Covered:
 
-#### ✍️ **While Loop**
+#### **While Loop**
 
 * Syntax:
 
@@ -18,7 +18,7 @@ while (condition) {
 
 * Runs **as long as** the condition is true.
 
-#### ✍️ **For Loop**
+#### **For Loop**
 
 * Syntax:
 
@@ -30,7 +30,7 @@ for (initialization; condition; updation) {
 
 * Best for known iteration counts.
 
-#### ✍️ **Do-While Loop**
+#### **Do-While Loop**
 
 * Syntax:
 
@@ -42,17 +42,17 @@ do {
 
 * Ensures the code runs **at least once**.
 
-#### ✍️ **Break Statement**
+#### **Break Statement**
 
 * Used to **exit a loop** immediately.
 
-#### ✍️ **Continue Statement**
+#### **Continue Statement**
 
 * Used to **skip the current iteration** and continue with the next.
 
 ---
 
-### 📆 Summary:
+### Summary:
 
 Loops are essential for automation and repetition in code. Each type of loop serves different scenarios:
 
@@ -64,7 +64,7 @@ Control statements like `break` and `continue` help **fine-tune** loop behavior 
 
 ---
 
-### 🔧 Programs Practiced:
+### Programs Practiced:
 
 | Filename                                                 | Description                                   |
 | -------------------------------------------------------- | --------------------------------------------- |
@@ -82,7 +82,7 @@ Control statements like `break` and `continue` help **fine-tune** loop behavior 
 
 ---
 
-### 🌟 Key Takeaways:
+### Key Takeaways:
 
 * Loops simplify repetitive code
 * Control statements (`break`, `continue`) enhance loop control
