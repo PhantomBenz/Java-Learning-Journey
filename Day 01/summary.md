@@ -1,6 +1,6 @@
-### 📅 Day 1 – Java Basics: Boilerplate, I/O, Variables & DataTypes
+### Day 1 – Java Basics: Boilerplate, I/O, Variables & DataTypes
 
-#### 🧠 Topics Covered:
+#### Topics Covered:
 
 * **Boilerplate Code**
   Learned the basic structure of a Java program:
@@ -58,7 +58,7 @@
 
 ---
 
-#### 🧪 Programs Practiced:
+#### Programs Practiced:
 
 | Filename | Description |
 |----------|-------------|
