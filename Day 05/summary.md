@@ -1,10 +1,10 @@
-# 🧵 Day 05 – Pattern Printing with Nested Loops
+# Day 05 – Pattern Printing with Nested Loops
 
 Today I explored how to use **nested `for` loops** in Java to print various simple yet structured patterns. This helped strengthen my understanding of loop control, iteration levels, and row-column logic.
 
 ---
 
-### 🔄 Concepts Covered:
+### Concepts Covered:
 
 - Basics of **nested `for` loops**
 - Controlling rows and columns using loop counters
@@ -12,7 +12,7 @@ Today I explored how to use **nested `for` loops** in Java to print various simp
 
 ---
 
-### ✨ Patterns Practiced:
+### Patterns Practiced:
 
 #### 🔹 1. Left-aligned right-angle triangle of stars:
 
@@ -54,9 +54,11 @@ GHIJ
 *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <br>
 ******
 </p>
+
+
 ---
 
-### 🧪 Programs Practiced:
+### Programs Practiced:
 
 | Filename                  | Description                          |
 |---------------------------|--------------------------------------|
@@ -67,7 +69,7 @@ GHIJ
 | [`e_HollowRectangle.java`](e_HollowRectangle.java)  | Hollow rectangle using `*`           |
 ---
 
-### 💡 Key Takeaway:
+### Key Takeaway:
 
 - Nested loops allow structured and scalable logic for pattern generation.
 - Tracking row/column positions helps map characters and whitespace precisely.
