@@ -13,8 +13,9 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 03 – Java: Conditional Statements](./Day%2003/summary.md)
 * [Day 04 – Java: Loop & Control Flow](./Day%2004/summary.md)
 * [Day 05 – Java: Pattern Printing with Nested Loops](./Day%2005/summary.md)
-* [Day 05 – Java: Functions & Function Overloading](./Day%2006/summary.md)
-* [Day 05 – Java: Prime Number Functions, Number Conversions & Java Scope](./Day%2007/summary.md)
+* [Day 06 – Java: Functions & Function Overloading](./Day%2006/summary.md)
+* [Day 07 – Java: Prime Number Functions, Number Conversions & Java Scope](./Day%2007/summary.md)
+* [Day 08 – Java: Advanced Pattern Printing](./Day%2008/summary.md)
 
 ---
 
