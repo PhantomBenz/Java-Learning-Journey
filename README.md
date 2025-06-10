@@ -17,7 +17,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 07 – Java: Prime Number Functions, Number Conversions & Java Scope](./Day%2007/summary.md)
 * [Day 08 – Java: Advanced Pattern Printing](./Day%2008/summary.md)
 * [Day 09 – Java: Arrays](./Day%2009/summary.md)
-
+* [Day 10 – Java: Arrays Advanced Problems & Optimization](./Day%2010/summary.md)
 ---
 
 ## Repository Structure
