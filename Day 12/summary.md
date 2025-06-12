@@ -29,6 +29,7 @@ int[][] arr = {
 
 ### Memory Utilization
 
+![Execution Flow](../.image/MemoryBy2DArray.png)
 * In Java, a 2D array is stored as an array of references to 1D arrays.
 * Hence, it’s not mandatory that every row has the same number of columns (jagged arrays are possible).
 
