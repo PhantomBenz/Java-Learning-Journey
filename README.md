@@ -20,6 +20,8 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 10 – Java: Arrays Advanced Problems & Optimization](./Day%2010/summary.md)
 * [Day 11 – Java: Array Sorting Algorithms](./Day%2011/summary.md)
 * [Day 12 – Java: 2D Array](./Day%2012/summary.md)
+* [Day 13 – Java: Strings](./Day%2013/summary.md)
+* [Day 14 – Java: Strings (Advanced)](./Day%2014/summary.md)
 ---
 
 ## Repository Structure
