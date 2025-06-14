@@ -54,19 +54,19 @@ sb.setCharAt(0, 'H'); // Output: Hello
 
 ## Programs Practiced:
 
-### `a_Substring.java`
+### [`a_Substring.java`](./a_Substring.java)
 
 * Demonstrates the use of substring with single and dual arguments.
 
-### `b_LargestString.java`
+### [`b_LargestString.java`](./b_LargestString.java)
 
 * Compares array of strings to print the largest lexicographically.
 
-### `c_StringBuilder.java`
+### [`c_StringBuilder.java`](./c_StringBuilder.java)
 
 * Demonstrates initialization, character mutation, appending, and reversing strings.
 
-### `d_FirstLetterToUpperCase.java`
+### [`d_FirstLetterToUpperCase.java`](./d_FirstLetterToUpperCase.java)
 
 * Converts the **first character of each word** to uppercase.
 * Takes sentence input → outputs with capitalized first letters.
@@ -75,7 +75,7 @@ sb.setCharAt(0, 'H'); // Output: Hello
   * Traverse the string.
   * After space, capitalize the next character.
 
-### `e_StringCompression.java`
+### [`e_StringCompression.java`](./e_StringCompression.java)
 
 * Compresses repeated characters in a string.
 * Example: `aaabbcccdd` → `a3b2c3d2`
