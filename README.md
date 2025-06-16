@@ -22,7 +22,8 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 12 – Java: 2D Array](./Day%2012/summary.md)
 * [Day 13 – Java: Strings](./Day%2013/summary.md)
 * [Day 14 – Java: Strings (Advanced)](./Day%2014/summary.md)
-* [Day 14 – Java: Bit Manipulation](./Day%2015/summary.md)
+* [Day 15 – Java: Bit Manipulation](./Day%2015/summary.md)
+* [Day 16 – Java: Object-Oriented Programming](./Day%2016/summary.md)
 
 ---
 
