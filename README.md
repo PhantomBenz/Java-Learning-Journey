@@ -24,6 +24,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 14 – Java: Strings (Advanced)](./Day%2014/summary.md)
 * [Day 15 – Java: Bit Manipulation](./Day%2015/summary.md)
 * [Day 16 – Java: Object-Oriented Programming](./Day%2016/summary.md)
+* [Day 17 – Java: Introduction to Recursion](./Day%2017/summary.md)
 
 ---
 
