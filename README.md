@@ -25,6 +25,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 15 – Java: Bit Manipulation](./Day%2015/summary.md)
 * [Day 16 – Java: Object-Oriented Programming](./Day%2016/summary.md)
 * [Day 17 – Java: Introduction to Recursion](./Day%2017/summary.md)
+* [Day 18 – Java: Divide & Conquer Algorithms](./Day%2018/summary.md)
 
 ---
 
