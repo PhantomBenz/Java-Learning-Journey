@@ -101,3 +101,13 @@ O(1) + O(n) + O(n) + O(n) = **O(n)** (we drop lower-order terms).
 * Practice analyzing loops and recursive calls to internalize these concepts.
 
 ---
+<br>
+
+![Time Complexity](../.image/Day%2019_1.png)
+
+---
+<br>
+
+![Common Complexity and Space Complexity](../.image/Day%2019_2.png)
+
+---
