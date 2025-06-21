@@ -64,13 +64,13 @@ void backtrack(parameters) {
 
 | Filename                   | Description                                                         |
 | -------------------------- | ------------------------------------------------------------------- |
-| `a_BacktrackingArray.java` | Demonstrates backtracking framework on simple array choices.        |
-| `b_FindSubset.java`        | Generates all subsets of an input set using recursive backtracking. |
-| `c_FindPermutation.java`   | Generates all permutations of an array.                             |
-| `d_NQueens.java`           | Solves the N‑Queens puzzle for n queens.                            |
-| `e_NKnights.java`          | Solves placing knights on a board without mutual attacks.           |
-| `f_GridWays.java`          | Counts paths in an m×n grid using backtracking.                     |
-| `g_Sudoku.java`            | Solves Sudoku puzzles by filling empty cells recursively.           |
+| [`a_BacktrackingArray.java`](./a_BacktrackingArray.java) | Demonstrates backtracking framework on simple array choices.        |
+| [`b_FindSubset.java`](./b_FindSubset.java)        | Generates all subsets of an input set using recursive backtracking. |
+| [`c_FindPermutation.java`](./c_FindPermutation.java)   | Generates all permutations of an array.                             |
+| [`d_NQueens.java`](./d_NQueens.java)           | Solves the N‑Queens puzzle for n queens.                            |
+| [`e_NKnights.java`](./e_NKnights.java)          | Solves placing knights on a board without mutual attacks.           |
+| [`f_GridWays.java`](./f_GridWays.java)          | Counts paths in an m×n grid using backtracking.                     |
+| [`g_Sudoku.java`](./g_Sudoku.java)            | Solves Sudoku puzzles by filling empty cells recursively.           |
 
 ---
 
