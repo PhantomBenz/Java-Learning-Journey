@@ -17,3 +17,5 @@ public class f_GridWays {
         return w1+w2;
     }
 }
+// TC = O(exponential)
+// or for direct solution (n-1+m-1)! / ((n-1)! * (m-1)!)   TC = O(linear)
