@@ -28,7 +28,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 18 – Java: Divide & Conquer Algorithms](./Day%2018/summary.md)
 * [Day 19 – Java: Time & Space Complexity](./Day%2019/summary.md)
 * [Day 20 – Java: Time and Space Complexity Analysis](./Day%2020/summary.md)
-* [Day 20 – Java: Introduction to Backtracking](./Day%2021/summary.md)
+* [Day 21 – Java: Introduction to Backtracking](./Day%2021/summary.md)
 
 ---
 
