@@ -152,6 +152,45 @@ public class a_LinkedList {
         return data;
     }
 
+    public Node findmid(){
+        Node slow = head;
+        Node fast = head;
+        while(fast!=null && fast.next!=null){
+            slow = slow.next;
+            fast = (fast.next).next;
+        }
+        return slow;
+    }
+
+    public boolean palindrome(){
+        if(head == null || head.next == null){
+            return true;
+        }
+        Node midNode = findmid();
+
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        Node right = prev;
+        Node left = head;
+        while(right!=null){
+            if(left.data!=right.data){
+                return false;
+            }
+            right = right.next;
+            left = left.next;
+        }
+
+        return true;
+    }
+
     public static void main(String[] args) {
         a_LinkedList ll = new a_LinkedList();
         ll.addFirst(2);
@@ -174,5 +213,16 @@ public class a_LinkedList {
         ll.printList();
         System.out.println("2nd last value removed is : " + ll.removeNthNodeFromEnd(2)); // considering last node's index is 1
         ll.printList();
+
+        // System.out.println();
+        // System.out.println("Palindrome : " + ll.palindrome());
+
+        ll.addLast(1);
+        ll.addLast(5);
+        ll.addLast(3);
+        ll.addLast(4);
+        ll.printList();
+        System.out.println();
+        System.out.println("Palindrome : " + ll.palindrome());
     }    
 }
