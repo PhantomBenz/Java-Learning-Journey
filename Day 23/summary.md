@@ -8,6 +8,7 @@ Today I learned about **singly linked lists**: a fundamental data structure cons
 
 * A **Linked List** is a linear data structure where each element (node) holds a value and a reference (pointer) to the next node.
 * Unlike arrays, linked lists allow **dynamic** memory allocation and efficient insertions/deletions at arbitrary positions.
+![Linked List](../.image/Day23_1.png)
 
 ## 🔹 Head & Tail
 
