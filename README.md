@@ -31,6 +31,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 21 – Java: Introduction to Backtracking](./Day%2021/summary.md)
 * [Day 22 – Java: Introduction to ArrayList](./Day%2022/summary.md)
 * [Day 23 – Java: Singly Linked List](./Day%2023/summary.md)
+* [Day 24 – Java: Linked List Loops & Java Collections Framework](./Day%2024/summary.md)
 
 ---
 
