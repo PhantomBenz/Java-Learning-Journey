@@ -34,6 +34,8 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 24 – Java: Linked List Loops & Java Collections Framework](./Day%2024/summary.md)
 * [Day 25 – Java: Advanced Linked List Techniques](./Day%2025/summary.md)
 * [Day 26 – Java: Stacks](./Day%2026/summary.md)
+* [Day 27 – Java: Advanced Stack Problems](./Day%2027/summary.md)
+
 
 ---
 
