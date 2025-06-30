@@ -37,6 +37,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 27 – Java: Advanced Stack Problems](./Day%2027/summary.md)
 * [Day 28 – Java: Queues](./Day%2028/summary.md)
 * [Day 29 – Java: Queues, Deques & Related Problems](./Day%2029/summary.md)
+* [Day 30 – Java: Greedy Algorithms](./Day%2030/summary.md)
 
 
 ---
