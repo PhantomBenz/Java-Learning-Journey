@@ -4,7 +4,7 @@ Today I explored the powerful **Greedy Algorithm** paradigm and solved classic p
 
 ---
 
-## 🔍 What is Greedy Algorithm?
+## What is Greedy Algorithm?
 
 Greedy algorithms build up a solution piece by piece, always choosing the next piece that offers the **most immediate benefit** or **local optimality**.
 
@@ -14,7 +14,7 @@ Greedy algorithms build up a solution piece by piece, always choosing the next p
 
 ## Programs Practiced
 
-### 1. `ActivitySelection.java`
+### 1. [`ActivitySelection.java`](./ActivitySelection.java)
 
 **Problem**: Given `n` activities with start and end times, select the maximum number of activities that can be performed by a single person.
 
@@ -27,7 +27,7 @@ Greedy algorithms build up a solution piece by piece, always choosing the next p
 
 ---
 
-### 2. `FractionalKnapsack.java`
+### 2. [`FractionalKnapsack.java`](./FractionalKnapsack.java)
 
 **Problem**: Given weights and values of items, and a knapsack capacity, return the maximum total value that can be put in the knapsack (you can take fractional parts).
 
@@ -41,7 +41,7 @@ Greedy algorithms build up a solution piece by piece, always choosing the next p
 
 ---
 
-### 3. `MinAbsoluteDifferencePairs.java`
+### 3. [`MinAbsoluteDifferencePairs.java`](./MinAbsoluteDifferencePairs.java)
 
 **Problem**: Pair elements of two arrays such that the sum of absolute differences of pairs is minimized.
 
@@ -54,7 +54,7 @@ Greedy algorithms build up a solution piece by piece, always choosing the next p
 
 ---
 
-### 4. `MaxLengthChainOfPairs.java`
+### 4. [`MaxLengthChainOfPairs.java`](./MaxLengthChainOfPairs.java)
 
 **Problem**: Given pairs of numbers, form the longest chain such that for any pair (a, b), the next pair (c, d) has `b < c`.
 
@@ -65,7 +65,7 @@ Greedy algorithms build up a solution piece by piece, always choosing the next p
 
 ---
 
-### 5. `Coins.java`
+### 5. [`Coins.java`](./Coins.java)
 
 **Problem**: Given infinite supply of denominations `[1,2,5,10,20,50,100,500,1000]`, find the **minimum number of coins** to make change for value `V`.
 
@@ -77,7 +77,7 @@ Greedy algorithms build up a solution piece by piece, always choosing the next p
 
 ---
 
-### 6. `JobSequencingProblem.java`
+### 6. [`JobSequencingProblem.java`](./JobSequencingProblem.java)
 
 **Problem**: Each job has a deadline and profit. Schedule jobs to maximize total profit while ensuring each job takes one unit of time and is done before the deadline.
 
@@ -91,7 +91,7 @@ Greedy algorithms build up a solution piece by piece, always choosing the next p
 
 ---
 
-### 7. `ChocolaProblem.java`
+### 7. [`ChocolaProblem.java`](./ChocolaProblem.java)
 
 **Problem**: Given costs of cutting chocolate in horizontal and vertical directions, minimize the cost to cut the entire chocolate into 1x1 pieces.
 
@@ -112,5 +112,3 @@ Greedy algorithms build up a solution piece by piece, always choosing the next p
 * Real-world problems like scheduling, resource allocation, and minimum cost problems often benefit from greedy methods.
 
 ---
-
-🚀 *Day 30 complete!*
