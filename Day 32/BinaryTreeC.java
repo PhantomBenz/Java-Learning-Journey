@@ -152,6 +152,27 @@ public class BinaryTreeC {
         return dist1+dist2;
     }
 
+    public static int kthAncestor(Node root, int d, int k) {
+        if(root == null) {
+            return -1;
+        }
+        if(root.data == d) {
+            return 0;
+        }
+        int leftDist = kthAncestor(root.left, d, k);
+        int rightDist = kthAncestor(root.right, d, k);
+
+        if(leftDist == -1 && rightDist == -1) {
+            return -1;
+        } 
+
+        int max = Math.max(leftDist, rightDist);
+        if (max+1 == k) {
+            System.out.println(root.data);
+        }
+        return max+1;
+    }
+
     public static void main(String[] args) {
         Node root = new Node(1);
         root.right = new Node(3);
@@ -176,5 +197,8 @@ public class BinaryTreeC {
         System.out.println("(Appraoch 1)Lowest common ansestor of " + d1 + " and " + d2 + " = " + lowestCommonAnsestor1(root, d1, d2).data);
         System.out.println("(Appraoch 2)Lowest common ansestor of " + d1 + " and " + d2 + " = " + lowestCommonAnsestor2(root, d1, d2).data);
         System.out.println("Distance between " + d1 + " and " + d2 + " = " + distanceBtnNodes(root, d1, d2));
+        int kth = 1;
+        System.out.print(kth + "th ansestor of " + d1 + " = ");
+        kthAncestor(root, d1, kth);
     }
 }
