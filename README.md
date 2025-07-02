@@ -39,7 +39,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 29 – Java: Queues, Deques & Related Problems](./Day%2029/summary.md)
 * [Day 30 – Java: Greedy Algorithms](./Day%2030/summary.md)
 * [Day 31 – Java: Binary Trees](./Day%2031/summary.md)
-
+* [Day 32 – Java: Advanced Binary Tree Operations](./Day%2032/summary.md)
 
 ---
 
