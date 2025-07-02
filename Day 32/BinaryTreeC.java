@@ -173,10 +173,30 @@ public class BinaryTreeC {
         return max+1;
     }
 
+    public static int sumTree(Node root) {
+        if(root == null) {
+            return 0;
+        }
+        int data = root.data;
+        root.data = sumTree(root.left) + sumTree(root.right);
+        return data + root.data;
+    }
+
+    public static void preorder(Node root) {
+        if(root == null) {
+            return;
+        }
+
+        System.out.print(root.data + " ");
+        preorder(root.left);
+        preorder(root.right);
+    }
+
     public static void main(String[] args) {
         Node root = new Node(1);
         root.right = new Node(3);
-        root.right.right = new Node(6);
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
         root.left = new Node(2);
         root.left.left = new Node(4);
         root.left.right = new Node(5);
@@ -184,8 +204,8 @@ public class BinaryTreeC {
                 1
                / \
               2   3
-             / \   \
-            4   5   6
+             / \ / \
+            4  5 6  7
          */
         System.out.print("Nodes seen from top view : ");
         topView(root);
@@ -200,5 +220,16 @@ public class BinaryTreeC {
         int kth = 1;
         System.out.print(kth + "th ansestor of " + d1 + " = ");
         kthAncestor(root, d1, kth);
+        sumTree(root);
+        /*
+                    27
+                   /  \
+                  9    13
+                 / \  /  \
+                0  0  0   0
+        */
+        System.out.print("Preorder of transformed root : ");
+        preorder(root);
+        System.out.println();
     }
 }
