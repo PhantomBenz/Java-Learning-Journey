@@ -91,7 +91,7 @@ public class BinaryTreeC {
         return false;
     }
 
-    public static Node lowestCommonAnsestor(Node root, int d1, int d2) {    // O(n)
+    public static Node lowestCommonAnsestor1(Node root, int d1, int d2) {    // O(n)
         ArrayList<Node> path1 = new ArrayList<>();
         ArrayList<Node> path2 = new ArrayList<>();
 
@@ -105,6 +105,51 @@ public class BinaryTreeC {
         }
         Node lca = path1.get(i-1);
         return lca;
+    }
+
+    public static Node lowestCommonAnsestor2(Node root, int d1, int d2) {
+        if(root == null || root.data == d1 || root.data == d2) {
+            return root;
+        }
+
+        Node leftLca = lowestCommonAnsestor2(root.left, d1, d2);
+        Node rightLca = lowestCommonAnsestor2(root.right, d1, d2);
+        if(rightLca == null) {
+            return leftLca;
+        }
+        if(leftLca == null) {
+            return rightLca;
+        }
+        
+        return root;
+    }
+
+    public static int distance(Node root, int d) {
+        if(root == null) {
+            return -1;
+        }
+        if(root.data == d) {
+            return 0;
+        }
+        int leftDist = distance(root.left, d);
+        int rightDist = distance(root.right, d);
+
+        if(leftDist == -1 && rightDist == -1) {
+            return -1;
+        } 
+        else if (leftDist == -1) {
+            return rightDist+1;
+        }
+        else {
+            return leftDist+1;
+        }
+    }
+
+    public static int distanceBtnNodes(Node root, int d1, int d2) {
+        Node lca = lowestCommonAnsestor2(root, d1, d2);
+        int dist1=distance(lca, d1),dist2=distance(lca, d2);
+        
+        return dist1+dist2;
     }
 
     public static void main(String[] args) {
@@ -127,7 +172,9 @@ public class BinaryTreeC {
         System.out.print("Nodes in " + k + "th level : ");
         kLevel(root, 1, k);
         System.out.println();
-        int d1 = 4, d2 = 5;
-        System.out.println("Lowest common ansestor of " + d1 + " and " + d2 + " = " + lowestCommonAnsestor(root, d1, d2).data);
+        int d1 = 4, d2 = 6;
+        System.out.println("(Appraoch 1)Lowest common ansestor of " + d1 + " and " + d2 + " = " + lowestCommonAnsestor1(root, d1, d2).data);
+        System.out.println("(Appraoch 2)Lowest common ansestor of " + d1 + " and " + d2 + " = " + lowestCommonAnsestor2(root, d1, d2).data);
+        System.out.println("Distance between " + d1 + " and " + d2 + " = " + distanceBtnNodes(root, d1, d2));
     }
 }
