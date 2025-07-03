@@ -40,6 +40,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 30 – Java: Greedy Algorithms](./Day%2030/summary.md)
 * [Day 31 – Java: Binary Trees](./Day%2031/summary.md)
 * [Day 32 – Java: Advanced Binary Tree Operations](./Day%2032/summary.md)
+* [Day 33 – Java: Binary Search Tree (BST)](./Day%2033/summary.md)
 
 ---
 
