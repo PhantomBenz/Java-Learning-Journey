@@ -164,6 +164,15 @@ public class BinarySearchTree {
         */
         Node root = null;
         int value[] = {8,5,3,1,4,6,10,11,14};
+        /*
+                            8
+                           / \
+                          5   10
+                         / \    \
+                        3   6    11
+                       / \        \
+                      1   4        14
+        */
         for(int i = 0; i < value.length; i++) {
             root = insert(root, value[i]);
         }
