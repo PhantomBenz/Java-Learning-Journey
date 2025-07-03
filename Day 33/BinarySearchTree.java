@@ -48,6 +48,41 @@ public class BinarySearchTree {
         }
     }
 
+    public static Node deleteNode(Node root, int data) {
+        if(root == null) { 
+            return null;
+        }
+        else if(root.data < data) {
+            root.left = deleteNode(root.left, data);
+        }
+        else if(root.data>data){
+            root.right = deleteNode(root.right, data);
+        }
+        else{
+            if(root.left == null && root.right == null) {
+                return null;
+            }
+            else if(root.left == null) {
+                return root.right;
+            }
+            else if(root.right == null){
+                return root.left;
+            }
+
+            Node IS = findInorderSuccessor(root.right);
+            root.data = IS.data;
+            root.right = deleteNode(root.right, IS.data);
+        }
+        return root;
+    }
+
+    public static Node findInorderSuccessor(Node root) {
+        while(root.left != null) {
+            root = root.left;
+        }
+        return root;
+    }
+
     public static void main(String[] args) {
         // Node root = new Node(4);
         // root.left = new Node(2);
@@ -71,5 +106,9 @@ public class BinarySearchTree {
         System.out.println();
         int key = 7;
         System.out.println(key + " is present in BST : " + searchKey(root, key));
+
+        root = deleteNode(root, 5);
+        inorder(root);
+        System.out.println();
     }    
 }
