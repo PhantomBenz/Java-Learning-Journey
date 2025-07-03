@@ -83,6 +83,23 @@ public class BinarySearchTree {
         return root;
     }
 
+    public static void printInRage(Node root, int min, int max) {
+        if(root == null) {
+            return;
+        }
+        if(root.data >= min && root.data <= max) {
+            printInRage(root.left, min, max);
+            System.out.print(root.data + " ");
+            printInRage(root.right, min, max);
+        }
+        else if (root.data < min) {
+            printInRage(root.left, min, max);
+        }
+        else {
+            printInRage(root.right, min, max);
+        }
+    }
+
     public static void main(String[] args) {
         // Node root = new Node(4);
         // root.left = new Node(2);
@@ -98,7 +115,7 @@ public class BinarySearchTree {
                 1   3   6
         */
         Node root = null;
-        int value[] = {5,1,3,4,2,7};
+        int value[] = {8,5,3,1,4,6,10,11,14};
         for(int i = 0; i < value.length; i++) {
             root = insert(root, value[i]);
         }
@@ -107,8 +124,11 @@ public class BinarySearchTree {
         int key = 7;
         System.out.println(key + " is present in BST : " + searchKey(root, key));
 
-        root = deleteNode(root, 5);
+        root = deleteNode(root, 8);
         inorder(root);
+        System.out.println();
+
+        printInRage(root, 5, 12);
         System.out.println();
     }    
 }
