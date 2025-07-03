@@ -33,6 +33,21 @@ public class BinarySearchTree {
         inorder(root.right);
     }
 
+    public static boolean searchKey(Node root, int k) {
+        if(root == null) {
+            return false;
+        }
+        if(root.data == k) {
+            return true;
+        }
+        else if(root.data > k) {
+            return searchKey(root.left, k);
+        }
+        else {
+            return searchKey(root.right, k);
+        }
+    }
+
     public static void main(String[] args) {
         // Node root = new Node(4);
         // root.left = new Node(2);
@@ -54,5 +69,7 @@ public class BinarySearchTree {
         }
         inorder(root);
         System.out.println();
+        int key = 7;
+        System.out.println(key + " is present in BST : " + searchKey(root, key));
     }    
 }
