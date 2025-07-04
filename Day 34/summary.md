@@ -4,7 +4,7 @@ Today I extended my BST skills by practicing **BST balancing** and studied the t
 
 ---
 
-## 🔹 Building & Manipulating Balanced BSTs (`BinarySearchTreeB.java`)
+## 🔹 Building & Manipulating Balanced BSTs [`BinarySearchTreeB.java`](./BinarySearchTreeB.java)
 
 ### 1. **Creating a Balanced BST from Sorted Array**
 
@@ -74,7 +74,7 @@ public static Node mergeBSTs(Node b1, Node b2) {
 
 ---
 
-## 🔹 AVL Trees: Theory & Code Snippets fileciteturn8file1
+## 🔹 AVL Trees: Theory & Code Snippets [`Reading Material`](./AVL%20Trees%20(Reading%20Material).pdf)
 
 **AVL Tree** is a self‑balancing BST where for every node, the **balance factor** (height(left) – height(right)) is in {−1, 0, 1}. To maintain this, four rotation cases handle imbalance:
 
