@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class BinarySearchTreeB {
@@ -93,6 +94,44 @@ public class BinarySearchTreeB {
         return new Info(false, size, min, max);
     }
 
+    public static Node createBalancedBST(ArrayList<Integer> arr, int s, int e) {
+        if(s>e) {
+            return null;
+        }
+        Node root = new Node(arr.get((s+e)/2));
+        root.left = createBalancedBST(arr, s, (s+e)/2-1);
+        root.right = createBalancedBST(arr, (s+e)/2+1, e);
+        return root;
+    }
+
+    public static Node mergeBSTs(Node bst1, Node bst2) {
+        ArrayList<Integer> arr1 = new ArrayList<>();
+        getInorder(bst1, arr1);
+        ArrayList<Integer> arr2 = new ArrayList<>();
+        getInorder(bst2, arr2);
+        ArrayList<Integer> arr = new ArrayList<>();
+        int i = 0, j = 0;
+        while(i < arr1.size() && j < arr2.size()) {
+            if(arr1.get(i) < arr2.get(j)) {
+                arr.add(arr1.get(i));
+                i++;
+            }
+            else {
+                arr.add(arr2.get(j));
+                j++;
+            }
+        }
+        while(i < arr1.size()) {
+            arr.add(arr1.get(i));
+            i++;
+        }
+        while(j < arr2.size()) {
+            arr.add(arr2.get(j));
+            j++;
+        }
+        return createBalancedBST(arr, 0, arr.size()-1);
+    }
+
     public static void main(String[] args) {
         int arr[] = {3,5,6,8,10,11,12};
         /*        root1 (expected)
@@ -157,5 +196,30 @@ public class BinarySearchTreeB {
         */
         largestBST(root3);
         System.out.println("Largest BST size = " + maxsizeBST);
+
+        Node bst1 = new Node(2);
+        bst1.left = new Node(1);
+        bst1.right = new Node(4);
+
+        Node bst2 = new Node(9);
+        bst2.left = new Node(3);
+        bst2.right = new Node(12);
+
+        /*    bst1         bst2
+                2           9
+               / \         / \
+              1   4       3   12
+        */
+
+        Node bts = mergeBSTs(bst1, bst2);
+        /*           bts
+                       3
+                     /   \
+                    1     9
+                     \   / \
+                      2 4  12
+        */
+        preorder(bts);
+        System.out.println();
     }
 }
