@@ -90,5 +90,23 @@ public class PriorityQueueA {
             System.out.print("C" + pqC.remove().idx + " ");
         }
         System.out.println();
+
+        
+        // Connect N Ropes Problem
+        int cost = 0;
+        PriorityQueue<Integer> ropes = new PriorityQueue<>();
+        ropes.add(4);
+        ropes.add(3);
+        ropes.add(3);
+        ropes.add(2);
+        ropes.add(6);
+        while(ropes.size()>1) {
+            int min1 = ropes.remove();
+            int min2 = ropes.remove();
+            cost += min1 + min2;
+            ropes.add(min1+min2);
+        }
+        System.out.println();
+        System.out.println(cost);
     }
 }
