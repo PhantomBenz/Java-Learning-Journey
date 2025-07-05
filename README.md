@@ -41,7 +41,8 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 31 – Java: Binary Trees](./Day%2031/summary.md)
 * [Day 32 – Java: Advanced Binary Tree Operations](./Day%2032/summary.md)
 * [Day 33 – Java: Binary Search Tree (BST)](./Day%2033/summary.md)
-* [Day 33 – Java: Balancing BSTs & Introduction to AVL Trees](./Day%2034/summary.md)
+* [Day 34 – Java: Balancing BSTs & Introduction to AVL Trees](./Day%2034/summary.md)
+* [Day 35 – Java: Heaps & Priority Queues](./Day%2035/summary.md)
 
 ---
 
