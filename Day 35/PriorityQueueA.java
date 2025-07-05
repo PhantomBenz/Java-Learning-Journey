@@ -36,6 +36,27 @@ public class PriorityQueueA {
         }
     }
 
+    // Weakest Soldier Problem
+    static class Row implements Comparable<Row> {
+        int soldiers;
+        int idx;
+
+        public Row(int soldiers, int idx) {
+            this.soldiers = soldiers;
+            this.idx = idx;
+        }
+
+        @Override
+        public int compareTo(Row r2) {
+            if(this.soldiers == r2.soldiers) {
+                return this.idx - r2.idx;
+            }
+            else {
+                return this.soldiers - r2.soldiers;
+            }
+        }
+    }
+
     public static void main(String args[]) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
@@ -107,6 +128,37 @@ public class PriorityQueueA {
             ropes.add(min1+min2);
         }
         System.out.println();
-        System.out.println(cost);
+        System.out.println("Total Cost = " + cost);
+        System.out.println();
+
+        /* Weakest Soldier
+        We are given an mxn binary matrix of 1's(soldiers) and 0's(civilians). 
+        Soldiers at front/left and civilians at back/right in each row.
+
+        A row i is weaker than a row j if :
+            - numbers of 1's (soldiers) in j > i
+            - and index of j > i 
+        */
+        int army[][] = {
+            {1,0,0,0},
+            {1,1,1,1},
+            {1,0,0,0},
+            {1,0,0,0}
+        };
+        int ks = 2;
+        PriorityQueue<Row> soldier = new PriorityQueue<>();
+        for(int i = 0; i < army.length; i++) {
+            int count = 0;
+            for(int j = 0; j < army[0].length; j++) {
+                count += army[i][j] == 1 ? 1 : 0;
+            }
+            soldier.add(new Row(count,i));
+        }
+        System.out.print("Weakest rows = ");
+        for(int i = 0; i< ks; i++) {
+            System.out.print("R"+ soldier.remove().idx + " ");
+        }
+        System.out.println();
+        System.out.println();
     }
 }
