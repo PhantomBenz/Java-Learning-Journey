@@ -57,6 +57,21 @@ public class PriorityQueueA {
         }
     }
 
+    // Sliding window problem
+    static class Win implements Comparable<Win> {
+        int data;
+        int idx;
+        public Win(int data, int idx) {
+            this.data = data;
+            this.idx = idx;
+        }
+
+        @Override
+        public int compareTo(Win w2) {
+            return this.data - w2.data;
+        }
+    }
+
     public static void main(String args[]) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
@@ -159,6 +174,33 @@ public class PriorityQueueA {
             System.out.print("R"+ soldier.remove().idx + " ");
         }
         System.out.println();
+        System.out.println();
+
+
+        // Sliding Window Maximum           // O(nlogkw)
+        int kw = 3;
+        int window[] = {1,3,-1,-3,5,3,6,7};
+        int result[] = new int[window.length-kw+1];
+        PriorityQueue<Win> maxq = new PriorityQueue<>(Comparator.reverseOrder());
+
+        for(int i = 0; i < k; i++) {
+            maxq.add(new Win(window[i],i));
+        }
+
+        result[0] = maxq.peek().data;
+
+        for(int i = kw; i < window.length; i++) {
+            while(maxq.size() > 0 && maxq.peek().idx <= (i-kw)) {
+                maxq.remove();
+            }
+
+            maxq.add(new Win(window[i], i));
+            result[i-kw+1] = maxq.peek().data;
+        }
+
+        for(int i = 0; i < result.length; i++) {
+            System.out.print(result[i] + " ");
+        }
         System.out.println();
     }
 }
