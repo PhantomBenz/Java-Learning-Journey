@@ -1,22 +1,22 @@
 import java.util.ArrayList;
 public class HeapA {
-    static class MinHeap {
+    static class MinHeap {//for MaxHeap change the < to > where arr.get()'s are compared and also change min to max for convention
         ArrayList<Integer> arr = new ArrayList<>();
 
         private void heapify(int i) {
             int left = 2*i+1;
             int right = 2*i+2;
-            int minIdx = i;
+            int minIdx = i;     // here name
 
-            if(left < arr.size() && arr.get(left) < arr.get(minIdx)) {
+            if(left < arr.size() && arr.get(left) < arr.get(minIdx)) {  // here sign and name
                 minIdx = left;
             }
 
-            if(right < arr.size() && arr.get(right) < arr.get(minIdx)) {
+            if(right < arr.size() && arr.get(right) < arr.get(minIdx)) {  // here sign and name
                 minIdx = right;
             }
 
-            if(minIdx != i) {
+            if(minIdx != i) {       // here name
                 int temp = arr.get(i);
                 arr.set(i, arr.get(minIdx));
                 arr.set(minIdx, temp);
@@ -31,7 +31,7 @@ public class HeapA {
             int x = arr.size()-1;
             int par = (x-1)/2;
 
-            while(arr.get(x) < arr.get(par)) {      // O(logn)
+            while(arr.get(x) < arr.get(par)) {      // O(logn)      // here sign
                 int temp = arr.get(x);
                 arr.set(x, arr.get(par));
                 arr.set(par, temp);
