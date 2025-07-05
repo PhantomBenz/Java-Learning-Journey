@@ -16,6 +16,26 @@ public class PriorityQueueA {
         }
     }
 
+    // For nearby cars problem
+    static class Point implements Comparable<Point> {
+        int x;
+        int y;
+        int distSq;
+        public int idx;
+
+        Point(int x, int y, int idx) {
+            this.x = x;
+            this.y = y;
+            distSq = x*x + y*y;
+            this.idx = idx;
+        }
+
+        @Override
+        public int compareTo(Point p2) {
+            return this.distSq - p2.distSq;
+        }
+    }
+
     public static void main(String args[]) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
@@ -54,6 +74,20 @@ public class PriorityQueueA {
         while(!pqs.isEmpty()) {
             System.out.println(pqs.peek().name + " -> " + pqs.peek().rank); // O(1)
             pqs.remove(); // O(logn)
+        }
+        System.out.println();
+
+
+        // Nearby car problems
+        int pts[][] = {{3,3}, {5,-1}, {-2,4}};
+        int k = 2;
+        PriorityQueue<Point> pqC = new PriorityQueue<>();
+        for(int i = 0; i < pts.length; i++) {
+            pqC.add(new Point(pts[i][0],pts[i][1],i));
+        }
+
+        for(int i = 0; i < k; i++) {
+            System.out.print("C" + pqC.remove().idx + " ");
         }
         System.out.println();
     }
