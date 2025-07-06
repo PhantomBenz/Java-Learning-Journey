@@ -3,6 +3,21 @@ import java.util.LinkedHashMap;
 import java.util.Set;
 import java.util.TreeMap;
 public class HashMapJCF {
+    public static String getStart(HashMap<String, String> tickets) {
+        HashMap<String, String> revMap = new HashMap<>();
+
+        for(String key : tickets.keySet()) {
+            revMap.put(tickets.get(key), key);
+        }
+
+        for(String key: tickets.keySet()) {
+            if(!revMap.containsKey(key)) {
+                return key;
+            }
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
         // Create
         HashMap<String,Integer> hm = new HashMap<>();
@@ -137,5 +152,74 @@ public class HashMapJCF {
         }
         same = same && vhm.isEmpty();
         System.out.println("s and t are anagram : " + same);
+        System.out.println();
+
+
+        // Find Itinerary from Tickets
+        /*
+            Given :
+            "Lalitpur" -> "Pokhara"
+            "Mumbai" -> "Kathmandu"
+            "Biratnagar" -> "Lalitpur"
+            "Kathmandu" -> "Biratnagar"
+
+            Ans:
+            "Mumbai" -> "Kathmandu" -> "Biratnagar" -> "Lalitpur" -> "Pokhara"
+        */
+        HashMap<String, String> tickets = new HashMap<>();
+        tickets.put("Lalitpur", "Pokhara");
+        tickets.put("Mumbai", "Kathmandu");
+        tickets.put("Biratnagar", "Lalitpur");
+        tickets.put("Kathmandu", "Biratnagar");
+
+        String start = getStart(tickets);
+        System.out.print(start);
+        for(int i = 0; i < tickets.size(); i++) {
+            System.out.print(" -> " + tickets.get(start));
+            start = tickets.get(start);
+        }
+        System.out.println();
+        System.out.println();
+
+
+        /*
+            Largest subarray with 0 sum
+            given:
+                arr = {15,-2,2,-8,1,7,10,23}
+            ans: 5 ;    {-2,2,-8,1,7}
+        */
+        LinkedHashMap<Integer, Integer> sum = new LinkedHashMap<>();
+        int arrs[] = {15,-2,2,-8,1,7,10};
+        int sums = 0;
+        int len = 0;
+        for(int i = 0; i < arrs.length; i++) {
+            sums += arrs[i];
+            if(sum.containsKey(sums)) {
+                len = Math.max(len, i - sum.get(sums));
+            }
+            else {
+                sum.put(sums, i);
+            }
+        }
+        System.out.println("Largest subarray with sum 0 = " + len);
+        System.out.println();
+
+
+        sum.clear();
+        int arrs2[] = {10,2,-2,-20,10};
+        int k = -10;
+        sums = 0;
+        len = 0;
+        sum.put(0, 1);
+        
+        for(int i = 0; i < arrs2.length; i++) {
+            sums += arrs2[i];
+            if(sum.containsKey(sums - k)) {
+                len += sum.get(sums - k);
+            }
+            sum.put(sums, sum.getOrDefault(sums, 0)+1);
+        }
+        System.out.println("Largest subarray with " + k + " = " + len);
+        System.out.println();
     }
 }
