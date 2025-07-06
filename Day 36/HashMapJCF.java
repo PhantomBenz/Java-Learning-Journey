@@ -116,16 +116,26 @@ public class HashMapJCF {
             typically using all the original letters exactly once.
         */
 
-        String s = "race", t = "care";
-        HashMap<Character, Integer> v1hm = new HashMap<>(), v2hm = new HashMap<>();
+        String s = "earth", t = "heart";
+        HashMap<Character, Integer> vhm = new HashMap<>();
         for(int i = 0; i < s.length(); i++) {
-            v1hm.put(s.charAt(i), v1hm.getOrDefault(s.charAt(i),0)+1);
-            v2hm.put(t.charAt(i), v2hm.getOrDefault(t.charAt(i),0)+1);
+            vhm.put(s.charAt(i), vhm.getOrDefault(s.charAt(i),0)+1);
         }
         boolean same = true;
-        for(Character ch : v1hm.keySet()) {
-            same = v1hm.get(ch) == v2hm.get(ch) ? true : false; 
+        for(int i = 0; i < t.length(); i++) {
+            char ch = t.charAt(i);
+            if(vhm.get(ch) != null) {
+                if(vhm.get(ch) == 1) {
+                    vhm.remove(ch);
+                } else {
+                    vhm.put(ch, vhm.get(ch)-1);
+                }
+            }
+            else {
+                same = false;
+            }
         }
+        same = same && vhm.isEmpty();
         System.out.println("s and t are anagram : " + same);
     }
 }
