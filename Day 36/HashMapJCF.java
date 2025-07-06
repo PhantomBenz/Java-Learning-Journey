@@ -83,5 +83,49 @@ public class HashMapJCF {
 
         System.out.println(thm);
         System.out.println();
+
+        // Majority Element Problem
+        /*
+            Given an integer array of size n, find all the elements that appear more than n/3 times.
+        */
+        int arr[] = {1,3,2,5,1,3,1,5,1};
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for(int i = 0; i< arr.length; i++) {
+
+            // if(map.containsKey(arr[i])) {
+            //     map.put(arr[i], map.get(arr[i])+1);
+            // }
+            // else {
+            //     map.put(arr[i], 1);
+            // }
+
+            map.put(arr[i], map.getOrDefault(arr[i], 0)+1);
+        }
+
+        for (Integer key : map.keySet()) {
+            if(map.get(key) > arr.length/3) {
+                System.out.println(key);
+            }
+        }
+        System.out.println();
+
+        // Valid Anagram Problem
+        /*
+            Given two string s and t, return true if t is an anagram of s, and false otherwise.
+            An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase 
+            typically using all the original letters exactly once.
+        */
+
+        String s = "race", t = "care";
+        HashMap<Character, Integer> v1hm = new HashMap<>(), v2hm = new HashMap<>();
+        for(int i = 0; i < s.length(); i++) {
+            v1hm.put(s.charAt(i), v1hm.getOrDefault(s.charAt(i),0)+1);
+            v2hm.put(t.charAt(i), v2hm.getOrDefault(t.charAt(i),0)+1);
+        }
+        boolean same = true;
+        for(Character ch : v1hm.keySet()) {
+            same = v1hm.get(ch) == v2hm.get(ch) ? true : false; 
+        }
+        System.out.println("s and t are anagram : " + same);
     }
 }
