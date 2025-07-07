@@ -44,6 +44,7 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 34 – Java: Balancing BSTs & Introduction to AVL Trees](./Day%2034/summary.md)
 * [Day 35 – Java: Heaps & Priority Queues](./Day%2035/summary.md)
 * [Day 36 – Java: Hashing](./Day%2036/summary.md)
+* [Day 37 – Java: Tries](./Day%2037/summary.md)
 
 ---
 
