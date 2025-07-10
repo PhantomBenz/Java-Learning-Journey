@@ -43,6 +43,35 @@ public class GraphC {
         return true;
     }
 
+    public static boolean isCycle(ArrayList<Edge>[] graph) {
+        boolean vis[] = new boolean[graph.length];
+        boolean stack[] = new boolean[graph.length];
+        for(int i = 0; i < graph.length; i++) {
+            if(!vis[i]) {
+                if(isCycleUtil(graph, i, vis, stack)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean isCycleUtil(ArrayList<Edge>[] graph, int curr, boolean vis[], boolean stack[]) {
+        vis[curr] = true;
+        stack[curr] = true;
+
+        for(int i = 0; i < graph[curr].size(); i++) {
+            Edge e = graph[curr].get(i);
+            if(stack[e.dest]) {
+                return true;
+            }
+            if(!vis[e.dest] && isCycleUtil(graph, e.dest, vis, stack)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         // Bipartite Graph
         /*
@@ -51,6 +80,9 @@ public class GraphC {
             In other words, for every edge (u,v), either u belongs to U and v to V, or u belongs to V and v to U.
             We can say that there is no edge that connects vetices of same set.
         */
+        // Acyclic graph - True
+        // Even Cycle    - True
+        // Odd  Cycle    - False
         /* 
                   0
                  / \
@@ -77,7 +109,24 @@ public class GraphC {
         graph1[3].add(new Edge(3, 2, 1));
         graph1[3].add(new Edge(3, 1, 1));
 
+        System.out.println("Graph is Bipartite : " + isBipartite(graph1));
 
-        System.out.println(isBipartite(graph1));
+        int V2 = 4;
+        @SuppressWarnings("unchecked")
+        ArrayList<Edge>[] graph2 = new ArrayList[V2];
+        for(int i = 0; i < graph2.length; i++) {
+            graph2[i] = new ArrayList<>();
+        }
+        graph2[0].add(new Edge(0, 2, 1));
+        graph2[1].add(new Edge(1, 0, 1));
+        graph2[2].add(new Edge(2, 3, 1));
+        graph2[3].add(new Edge(3, 0, 1));
+        /*
+                      -->2 ---> 3
+                     /         /
+             1 ---> 0 <--------  
+                         
+        */
+        System.out.println("Graph is cyclic : " + isCycle(graph2));
     }
 }
