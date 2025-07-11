@@ -45,6 +45,10 @@ This repository contains a chronological, day-by-day record of my Java learning 
 * [Day 35 – Java: Heaps & Priority Queues](./Day%2035/summary.md)
 * [Day 36 – Java: Hashing](./Day%2036/summary.md)
 * [Day 37 – Java: Tries](./Day%2037/summary.md)
+* [Day 38 – Java: Introduction to Graphs](./Day%2038/summary.md)
+* [Day 39 – Java: Graph Traversals & Components](./Day%2039/summary.md)
+* [Day 40 – Java: Advanced Graph Algorithms](./Day%2040/summary.md)
+* [Day 41 – Java: Advanced Graph Techniques](./Day%2041/summary.md)
 
 ---
 
