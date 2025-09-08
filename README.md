@@ -89,7 +89,7 @@ Before you clone and run the examples, ensure you have:
    * To clone this repository:
 
      ```bash
-     git clone https://github.com/PhantomBenz/Java-Learning-Journey.git
+     git clone https://github.com/sumoondev/Java-Learning-Journey.git
      ```
 
 ---
